@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>KAI Website</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+}
+  body {
+      font-family: "돋움", Dotum, verdana, arial;
+    font-size: 12px; color: #777;
+	display: block;
+	
+  }
+  div{ display:block;}
+  a{ text-decoration:none; color:#777;}
+
+  .main{
+  background-color: black;
+  background-image: url('메인종인.최종.jpg'); 
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height:auto;
+  }
+  
+  .mainheader_pic{height:500px;
+	display:block;}
+
+  #wrap {
+    position: relative;
+	}
+
+	#wrap #menu {position:relative; width:1003px; height:70px; background-color:black; 
+	padding:10px 25px; margin:0 auto 4px auto; text-align:center;} 
+	#wrap #menu ul{ list-style:none}
+	#wrap #menu ul li {float:left; width:120px; height:40px; margin-top:30px; margin-left:20px;}
+	#wrap #menu ul li a {text-decoration:none; color:#fff; font-weight:bold;}
+	
+	
+	#contents {
+    position: relative;
+    width: 971px;
+    height:auto;
+    padding: 10px 0 10px;
+    margin: 0 auto 0 auto;
+	}
+	
+	#left_con {
+float:left;
+width:400px;
+/*padding: 0 10px;*/
+margin-right:10px;
+}
+
+	.new_Album {
+    position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	left: 20px;
+}
+.new_Album .nal_pic {
+    overflow: hidden;
+    width: 380px;
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    border: 1px #ededed solid; /*album 박스 속성*/
+}
+
+.new_Album .nal_pic .pic {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+    border: 1px #f2f2f2 solid; /*앨범 사진 박스 속성*/
+}
+
+.new_Album .nal_pic .pic img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.new_Album .nal_pic .info {
+float: left;
+width: 123px;}
+}
+
+.new_Album .nal_pic .info .date{
+    display: block;
+    margin-bottom: 4px;
+    font-family: Tahoma;
+    line-height: 14px;
+}
+
+.new_Album .nal_pic .info .name{
+    display: block;
+    margin-bottom: 3px;
+    color: #777;
+    line-height: 14px;
+}
+
+.new_Album .nal_pic .info .title {
+    display: block;
+    line-height: 14px;
+    color: #ababab;
+}
+
+.new_Album .nal_pic .txt {
+    overflow: hidden;
+    clear: both;
+    padding: 9px 20px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+
+}
+
+.notice {
+position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	left: 20px;
+}
+
+.notice .nbox {
+overflow: hidden;
+    width: 380px;
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    border: 1px #ededed solid;} /*notice 박스 속성*/
+
+.notice .txt {
+float: left;
+}
+
+#notice li {
+overflow:hidden;
+font-size:0;
+height:20px;
+line-height:0;
+}
+
+.notice li .date {
+    float: right;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #ababab;
+	padding-right:7px;
+	}
+
+#notice .txt .dot {
+float: left;
+    width: 2px;
+    height: 2px;
+    margin: 6px 6px 0 0;
+    background-repeat: no-repeat;
+    background-position: -497px -165px;
+}
+
+.leter { 
+position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	left: 20px;
+} /* Leter 글씨에 대한 스타일 속성*/
+
+.leter .lbox{
+overflow: hidden;
+    /*width: 400px; -> 다른 박스들과 가로 길이 맞추기 위해서 없앰*/
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    border: 1px #ededed solid;
+	} /* Leter 박스에 대한 스타일 속성*/
+
+.leter h3 {
+margin-left:-10px;
+margin-bottom:8px;
+}
+
+.leter .txt {
+float: left;
+}
+
+#leter li {
+overflow:hidden;
+font-size:0;
+height:20px;
+line-height:0;
+}
+
+.leter li .date { 
+    float: right;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #ababab;
+	padding-right:7px;
+	} /*게시판 글 옆에 작성날짜에 대한 속성-> 위치는 오른쪽으로하고 padding-right를 조금 줘서 너무 붙어있지 않게한다.*/
+
+.leter .txt .dot {
+float: left;
+    width: 2px;
+    height: 2px;
+    margin: 6px 6px 0 0;
+    background-repeat: no-repeat;
+    background-position: -497px -165px;
+}
+
+.sns {
+width: 430px;
+}
+.sns a {
+text-decoration:none; color:#777;
+font-size: 12px;
+font-weight:bold;
+}
+
+.sns img {
+padding: 5px;
+text-decoration:none; color:#777;
+}
+
+#right_con {
+float: right;
+    width: 500px;
+    height: auto;
+    /*padding: 0*/
+    overflow: hidden;}
+
+.mvplay {
+    position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	/*left: 20px;*/
+}
+
+.mvplay .mbox {
+    overflow: hidden;
+    width: 470px;
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    border: 1px #ededed solid; /*mv 박스 속성*/
+}
+
+.mvname {
+float:left;
+padding-top: 10px;
+}
+
+.mvdate {
+float:right;
+padding:10px 20px 0 0;
+font-size:10px;
+}
+
+.mvlist {
+overflow: hidden;
+    position: relative;
+    width: 450px;
+    height: 100%;
+	}
+
+.mvlist li {
+    position: relative;
+	list-style:none; /*도트무늬를 없애줌.*/
+    float: left;
+    width: 130px;
+    height: 110px;
+    margin: 25px 10px;
+	font-size:10px;
+}
+  </style>
+ </head>
+<body class="main">
+ <div class="mainheader_pic"></div>
+  <div id="wrap"><!---->
+   <div id="menu">
+	<ul>
+		<li><a href="start_home.html"> HOME </a></li>
+		<li><a href="login.html"> LOGIN </a></li>
+		<li><a href="profile.html"> PROFILE </a></li>
+		<li><a href="notice.html"> NOTICE </a></li>
+		<li><a href="letter.html"> LETTER </a></li>
+		<li><a href="video.html"> VIDEOS </a></li>
+		<li><a href="2012gallery.html"> GALLERY </a></li>
+	</ul>
+   </div>
+ <div id="contents">
+  <div id="left_con">
+   <div class="new_Album">
+	<h2> New Album</h2>
+	<div class="nal_pic">
+		<span class="pic">
+			<a href="#">
+				<img src="카이앨범커버1.jpg"></a></span>
+				<div class="info">
+					<span class="date"> 2020-00-00</span>
+					<span class="name">카이</span>
+					<span class="title">타이틀 이름</span>
+				</div>
+				<p class="txt">카이는 왜이렇게 잘생겼을까 왜일까 카이는 왜 키도크고 다리도 길까 콘서트에서 본 카이는 진짜 다리가 이미터인줄 알았다 나도 그렇게 길어지고싶다 여기는 일단 아무말이나 하는 곳이다 재밌다 좀 많이써서 모양새가 어떻게 되는지 보려고 아무말이나 하고있다 블라블라 에베베베</p>
+	</div> <!--nal_pic-->
+  </div> <!--new_Album-->
+  <div class="notice">
+	<h2>Notice</h2>
+	<div class="nbox">
+	 <ul>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">(공지) KAI 미니 앨범 - [Confession] 발매!</a></span>
+			<span class="date">2020-09-10</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">(공지) KAI Lysn 버블 오류 안내</a></span>
+			<span class="date">2020-05-04</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">(이벤트) KAI 솔로앨범 발매 관련 이벤트</a></span>
+			<span class="date">2020-04-28</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">(공지) KAI 정규 앨범 - [spoiler] 발매!</a></span>
+			<span class="date">2020-04-27</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">(공지) ★200114 곰일파티 안내★</a></span>
+			<span class="date">2020-01-03</span>
+		</li>
+	</ul>
+  </div> <!--nbox-->
+  </div> <!--notice-->
+  <div class="leter">
+   <h2>Letter</h2>
+    <div class="lbox">
+	<a href="letter.html"><h3>from star</h3></a>
+	<ul>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">안녕하세요 KAI입니다! 다들 뭐하시나요?</a></span>
+			<span class="date">2020-02-09</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">안녕하세요 KAI입니다!</a></span>
+			<span class="date">2020-02-08</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">안녕하세요 KAI입니다! 오늘은 제 생일이에요</a></span>
+			<span class="date">2020-01-14</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">안녕하세요 KAI입니다!</a></span>
+			<span class="date">2020-01-01</span>
+		</li>
+	</ul>
+	<br>
+	<a href="letter.html"><h3>fan board</h3></a>
+	<ul>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">종인아 맛있는거 먹어 프로틴 말구ㅡㅡ!!</a></span>
+			<span class="date">2020-01-19</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">종인아 보고싶어ㅠㅠ</a></span>
+			<span class="date">2020-01-17</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">종인아 생일 축하해♥</a></span>
+			<span class="date">2020-01-14</span>
+		</li>
+		<li>
+			<span class="txt">
+			<span class="dot"></span>
+			<a href="/notice">종인아 생일 축하해♥♥♥♥</a></span>
+			<span class="date">2020-01-14</span>
+		</li>
+	</ul>
+	</div>
+  </div><!--leter-->
+  <div class="sns">
+	<a href="https://www.instagram.com/zkdlin/?hl=ko"><img src="ins.png" width="40px;" height="40px;" align="middle">@zkdiin INSTAGRAM</a> / <a href="https://twitter.com/weareoneEXO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twi.png" width="30px;" height="30px;" align="middle">@weareoneEXO TWITTER</a> </div> <!--align="middle" 은 그림의 가운데를 맞춰 한줄의 텍스트가 들어갈 수 있음-->
+  </div> <!--left_con-->
+
+  <div id="right_con">
+	<div class="mvplay">
+	 <h2>Music Video</h2>
+	  <div class="mbox">
+	   <iframe width="440" height="350"  src="https://www.youtube.com/embed/tCraTquoTMU" frameborder="0"></iframe> 
+	    <div class="mvname">
+		<h4 class="name">Pathcode #KAI</h4>
+		<span></span>
+	    </div> <!--mvname-->
+	    <div class="mvdate"> <span>등록일 : 2015-03-19</span></div>
+
+		<ul class="mvlist">
+		<li><a href="https://www.youtube.com/embed/81dk4Nc8cFc"><img src="170724전야.jpg"><span>2017-07-24</span></a>
+		<a href="#"><span>USF 엑소(EXO) - 전야 카이 직캠</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/xiifjlrtHfM"><img src="뮤뱅러브샷카이.jpg"><span>2018-12-14</span></a>
+		<a href="#"><span>EXO엑소(카이)- love shot 뮤직뱅크 직캠</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/Q-VX60sGRjo"><img src="템포카이.jpg"><span>2018-11-02</span></a>
+		<a href="#"><span>EXO COMEBACK SHOWCASE - Tempo KAI</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/ExtkNgYSnoU"><img src="컨페션카이.jpg"><span>2019-07-28</span></a>
+		<a href="#"><span>EXplOration in Seoul - Confession KAI</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/yYONEU2mjXc"><img src="스포일러카이.jpg"><span>2019-12-29</span></a>
+		<a href="#"><span>EXO 카이 Spoiler EXO PLANET #5 - EXplOration dot</span></a></li>
+
+		<li><a href="https://youtu.be/embed/AOrhgncU0O0"><img src="24_7카이.jpg"><span>2019-07-28</span></a>
+		<a href="#"><span>EXplOration 엑소 EXO - 24/7</span></a></li>
+
+
+	  </ul> <!--다른 영상 목록-->
+
+	  </div>
+	  
+	</div> <!--mvplay-->
+  </div> <!--right_con-->
+  </div> <!--contents-->
+  </div> <!--wrap-->
+ </body>
+</html>

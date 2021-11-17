@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>KAI_schedule board</title>
+  <style>
+	* {
+    margin: 0;
+    padding: 0;
+	}
+
+  body {
+      font-family: "돋움", Dotum, verdana, arial;
+    font-size: 12px; color: #777;
+	display: block;
+	
+  }
+
+	.schedule {
+  background-color: #000000;
+  background-image: url('스케줄종인.jpg'); 
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height:auto;
+  position: relative;
+  }
+
+  .schedule_bg {
+  height:500px;
+  }
+
+  #wrap {
+    position: relative;
+	}
+
+	#wrap #menu {position:relative; width:1003px; height:70px; background-color:white; padding:10px 0; margin:0 auto 4px auto;
+	text-align:center;} 
+	#wrap #menu ul{ list-style:none}
+	#wrap #menu ul li {float:left; width:120px; height:40px; margin-top:30px; margin-left:20px;}
+	#wrap #menu ul li a {
+	text-decoration:none; color:#000000; font-weight:bold; 
+	font-family: "돋움", Dotum, verdana, arial;
+	font-size:12px; font-style:bold;}
+	
+	.contents {
+    position: relative;
+	width:850px;
+    margin-bottom: 20px;
+	top: 15px;
+	margin: 0 auto 0 auto;
+}
+
+.contents .sbox {
+overflow: hidden;
+    /*width: 850px;*/
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+    border: 1px #ededed solid;
+	} /*notice 박스 속성*/
+
+	.date {
+	/*float: left;*/
+    width: 169px;
+    font-family: Tahoma;
+    font-size: 23px;
+    text-align: center;
+	}
+	.scboard {
+	width: 810px;
+    table-layout: fixed;
+    position: relative;
+	border-top:1px #ededed solid;
+	border-bottom:1px #ededed solid;
+	border-left:1px #ededed solid;
+	}
+
+	.scboard .th {
+	height:30px;
+	border-right: 1px #ededed solid;
+	font-weight:bold;
+	}
+
+	.scboard td {
+	padding:10px 0 10px 0;
+	height:110px;
+	border-top:1px #ededed solid;
+	border-right: 1px #ededed solid;
+	}
+
+	.agomonth {
+	background-color:#eee;
+	}
+
+	.scboard tbody td.agomonth .sch_wrap  .num { /*현재 달이 아닌 것은 튀면 안되니까!*/ 
+	font-weight: normal;
+    color: #ccc;
+	}
+
+	.scboard tbody td .sch_wrap .num {
+	display: block;
+    margin: -45px 5px ;
+    font-family: Arial;
+    font-size: 11px;
+    color: #999;
+    font-weight: bold;
+	text-align:left;
+	position: absolute; 
+	}
+
+	.btn .radio {
+	float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px 4px 0;
+	
+	}
+
+	.radio {
+	background-image: url('라디오.png');
+	}
+
+  </style>
+ </head>
+ <body class="schedule">
+  <div class="schedule_bg"></div>
+  <div id="wrap"><!---->
+      <div id="menu">
+	   <ul>
+		<li><a href="Main.html"> HOME </a></li>
+		<li><a href="login.html"> LOGIN </a></li>
+		<li><a href="profile.html"> PROFILE </a></li>
+		<li><a href="notice.html"> NOTICE </a></li>
+		<li><a href="schedule.html"> SCHEDULE </a></li>
+		<li><a href="video.html"> VIDEOS </a></li>
+		<li><a href="https://www.instagram.com/zkdlin/?hl=ko"> INSTAGRAM </a></li>
+	   </ul></div>
+	 <div class="contents">
+	 <h2 style="padding:5px 0;">Schedule</h2>
+	  <div class="sbox">
+	  <strong class="date">2020.06</strong>
+		<table class="scboard">
+			<thead>
+				<tr>
+					<th class="th">SUN</th>
+					<th class="th">MON</th>
+					<th class="th">TUE</th>
+					<th class="th">WED</th>
+					<th class="th">THU</th>
+					<th class="th">FRI</th>
+					<th class="th">SAT</th>
+				</tr>
+			</thead>
+			<tbody>
+			    <tr> <!--일주일-->
+					<td class="agomonth"><!--저번달-->
+					<div class="sch_wrap"><span class="num">31</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+                    
+					<td class>
+					<div class="sch_wrap"><span class="num">1</span>
+					</div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로<div class="btn"><a class="radio">라디오</a></div>-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">2</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">3</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">4</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">5</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">6</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+				</tr>
+				<tr> <!--일주일-->
+					<td class>
+					<div class="sch_wrap"><span class="num">7</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+                    
+					<td class>
+					<div class="sch_wrap"><span class="num">8</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">9</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">10</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">11</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">12</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">13</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+				</tr>
+
+				<tr> <!--일주일-->
+					<td class>
+					<div class="sch_wrap"><span class="num">14</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+                    
+					<td class>
+					<div class="sch_wrap"><span class="num">15</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">16</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">17</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">18</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">19</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">20</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+				</tr>
+
+				<tr> <!--일주일-->
+					<td class>
+					<div class="sch_wrap"><span class="num">21</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+                    
+					<td class>
+					<div class="sch_wrap"><span class="num">22</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">23</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">24</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">25</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">26</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">27</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+				</tr>
+
+				<tr> <!--일주일-->
+					<td class>
+					<div class="sch_wrap"><span class="num">28</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+                    
+					<td class>
+					<div class="sch_wrap"><span class="num">29</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class>
+					<div class="sch_wrap"><span class="num">30</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 div class="btn"하고 a태그로-->
+					</td>
+
+					<td class="agomonth"><!--다음달-->
+					<div class="sch_wrap"><span class="num">1</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+
+					<td class="agomonth">
+					<div class="sch_wrap"><span class="num">2</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+
+					<td class="agomonth">
+					<div class="sch_wrap"><span class="num">3</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+
+					<td class="agomonth">
+					<div class="sch_wrap"><span class="num">4</span></div>
+					<!--스케줄별로 아이콘 넣으려면 여기에 a태그로-->
+					</td>
+					
+				</tr>
+			</tbody>
+		</table>
+		 
+	  </div>
+	 </div>
+	</div> <!--wrap-->
+ </body>
+</html>

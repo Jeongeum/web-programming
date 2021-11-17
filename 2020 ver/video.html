@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KAI_video</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+	}
+
+  body {
+      font-family: "돋움", Dotum, verdana, arial;
+    font-size: 12px; color: #777;
+	display: block;
+	
+  }
+  a{
+  text-decoration:none; color: #777;}
+
+	.video {
+  background-color: #000000;
+  background-image: url('비디오종인.jpg'); 
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height:auto;
+  }
+
+  .video_bg {
+  height:500px;
+  }
+
+  #wrap {
+    position: relative;
+	}
+
+	#wrap #menu {position:relative; width:1003px; height:70px; background-color:white; padding:10px 0; margin:0 auto 4px auto;
+	text-align:center;} 
+	#wrap #menu ul{ list-style:none}
+	#wrap #menu ul li {float:left; width:120px; height:40px; margin-top:30px; margin-left:20px;}
+	#wrap #menu ul li a {
+	text-decoration:none; color:#000000; font-weight:bold; 
+	font-family: "돋움", Dotum, verdana, arial;
+	font-size:12px; font-style:bold;}
+
+	#contents {
+    position: relative;
+    width: 971px;
+    height:auto;
+    padding: 10px 0 10px;
+    margin: 0 auto 0 auto;
+	}
+	
+	#left_con {
+float:left;
+width:560px;
+/*padding: 0 10px;*/
+margin-right:10px;
+}
+
+.video_con {
+    position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	/*left: 20px;*/
+}
+
+.video .vbox {
+    overflow: hidden;
+    width: 550px;
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    border: 1px #ededed solid; /*mv 박스 속성*/
+}
+
+.mvname {
+float:left;
+padding-top: 10px;
+}
+
+.mvdate {
+float:right;
+padding:10px 20px 0 0;
+font-size:10px;
+}
+
+.mvlist {
+overflow: hidden;
+    position: relative;
+    width: 530px;
+    height: 100%;
+	}
+
+.mvlist li {
+    position: relative;
+	list-style:none; /*도트무늬를 없애줌.*/
+    float: left;
+    width: 120px;
+    height: 101px;
+    margin: 25px 6px;
+	font-size:10px;
+}
+
+#right_con {
+float: right;
+    width: 400px;
+    height: auto;
+    /*padding: 0*/
+    overflow: hidden;}
+.new_Album {
+    position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	left: 20px;
+}
+.new_Album .nal_pic {
+    overflow: hidden;
+    width: 355px;
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    border: 1px #ededed solid; /*album 박스 속성*/
+}
+
+.new_Album .nal_pic .pic {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+    border: 1px #f2f2f2 solid; /*앨범 사진 박스 속성*/
+}
+
+.new_Album .nal_pic .pic img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.new_Album .nal_pic .info {
+float: left;
+width: 123px;}
+}
+
+.new_Album .nal_pic .info .date{
+    display: block;
+    margin-bottom: 4px;
+    font-family: Tahoma;
+    line-height: 14px;
+}
+
+.new_Album .nal_pic .info .name{
+    display: block;
+    margin-bottom: 3px;
+    color: #777;
+    line-height: 14px;
+}
+
+.new_Album .nal_pic .info .title {
+    display: block;
+    line-height: 14px;
+    color: #ababab;
+}
+
+.new_Album .nal_pic .txt {
+    overflow: hidden;
+    clear: both;
+    padding: 9px 20px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.photo {
+    position: relative;
+    margin-bottom: 20px;
+	top: 15px;
+	left: 20px;
+}
+.pbox {
+    overflow: hidden;
+    width: 355px;
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+    border: 1px #ededed solid; /*album 박스 속성*/
+}
+
+.phlist {
+overflow: hidden;
+    position: relative;
+    width: 355px;
+    height: 100%;
+	}
+
+	.phlist li {
+    position: relative;
+	list-style:none;
+    float: left;
+    width: 105px;
+    height: 87px;
+    margin: 10px 6px;
+	font-size:10px;
+}
+
+</style>
+
+ </head>
+  <body class="video">
+ <div class="video_bg"></div>
+  <div id="wrap"><!---->
+   <div id="menu">
+	<ul>
+		<li><a href="Main.html"> HOME </a></li>
+		<li><a href="login.html"> LOGIN </a></li>
+		<li><a href="profile.html"> PROFILE </a></li>
+		<li><a href="notice.html"> NOTICE </a></li>
+		<li><a href="letter.html"> LETTER </a></li>
+		<li><a href="video.html"> VIDEOS </a></li>
+		<li><a href="2012gallery.html"> GALLERY </a></li>
+	</ul>
+   </div>
+
+   <div id="contents">
+   <div id="left_con">
+	<div class="video_con">
+	 <h2>Video</h2>
+	  <div class="vbox">
+	  <iframe width="530" height="350"  
+	  src="https://www.youtube.com/embed/y_w3BEi35Rk" frameborder="0"></iframe> 
+	    <div class="mvname">
+		<h4 class="name">The Performers Act V | KAI | Vogue, GQ & Gucci</h4>
+		<span></span>
+	    </div> <!--mvname-->
+	    <div class="mvdate"> <span>등록일 : 2019-12-12</span></div>
+
+		<ul class="mvlist">
+		<li><a href="https://www.youtube.com/embed/81dk4Nc8cFc"><img src="170724전야.jpg"><span>2017-07-24</span></a>
+		<a href="#"><span>USF 엑소(EXO) - 전야 카이 직캠</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/xiifjlrtHfM"><img src="뮤뱅러브샷카이.jpg"><span>2018-12-14</span></a>
+		<a href="#"><span>EXO엑소(카이)- love shot 뮤직뱅크 직캠</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/Q-VX60sGRjo"><img src="템포카이.jpg"><span>2018-11-02</span></a>
+		<a href="#"><span>EXO COMEBACK SHOWCASE - Tempo KAI</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/ExtkNgYSnoU"><img src="컨페션카이.jpg"><span>2019-07-28</span></a>
+		<a href="#"><span>EXplOration in Seoul - Confession KAI</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/yYONEU2mjXc"><img src="스포일러카이.jpg"><span>2019-12-29</span></a>
+		<a href="#"><span>EXO 카이 Spoiler EXO PLANET #5 - EXplOration dot</span></a></li>
+
+		<li><a href="https://www.youtube.com/embed/z3ulTnb0MGY"><img src="24_7카이.jpg"><span>2019-07-28</span></a>
+		<a href="#"><span>EXplOration 엑소 EXO - 24/7</span></a></li>
+
+		<li><a href="https://youtu.be/embed/AOrhgncU0O0"><img src="엘도라도카이.jpg"><span>2015-03-07</span></a>
+		<a href="#"><span>150307 EXOPLANET 2 - The EXO'luXion in Seoul El Dorado KAI</span></a></li>
+
+		<li><a href="https://youtu.be/embed/AOrhgncU0O0"><img src="런디스카이.jpg"><span>2017-12-25</span></a>
+		<a href="#"><span>SBS가요대전_ RUN THIS(kai focus)</span></a></li>
+
+
+	  </ul> <!--다른 영상 목록--></div>
+	</div>
+   </div>
+  <div id="right_con">
+   <div class="new_Album">
+	<h2> New Album</h2>
+	<div class="nal_pic">
+		<span class="pic">
+			<a href="/albumgo">
+				<img src="카이앨범커버2.jpg"></a></span>
+				<div class="info">
+					<span class="date"> 2020-00-00</span>
+					<span class="name">카이</span>
+					<span class="title">타이틀 이름</span>
+				</div>
+				<p class="txt">카이는 왜이렇게 잘생겼을까 왜일까 카이는 왜 키도크고 다리도 길까 콘서트에서 본 카이는 진짜 다리가 이미터인줄 알았다 나도 그렇게 길어지고싶다 여기는 일단 아무말이나 하는 곳이다 재밌다 좀 많이써서 모양새가 어떻게 되는지 보려고 아무말이나 하고있다 블라블라 에베베베</p>
+	</div> <!--nal_pic-->
+  </div> <!--new_Album-->
+
+  <div class="photo">
+	<h2>Photo</h2>
+	<div class="pbox">
+		<ul class="phlist">
+		<li><a href="2020gallery.html"><img src="2020년종인.jpg"><span>2020</span></a></li>
+
+		<li><a href="2019gallery.html"><img src="2019년종인.jpg"><span>2019</span></a></li>
+
+		<li><a href="2018gallery.html"><img src="2018년종인.jpg"><span>2018</span></a></li>
+
+		<li><a href="2017gallery.html"><img src="2017년종인.jpg"><span>2017</span></a></li>
+
+		<li><a href="2016gallery.html"><img src="2016년종인.jpg"><span>2016</span></a></li>
+
+		<li><a href="2015gallery.html"><img src="2015년종인.jpg"><span>2015</span></a></li>
+
+		<li><a href="2014gallery.html"><img src="2014년종인.jpg"><span>2014</span></a></li>
+
+		<li><a href="2013gallery.html"><img src="2013년종인.jpg"><span>2013</span></a></li>
+
+		<li><a href="2012gallery.html"><img src="2012년종인.jpg"><span>2012</span></a></li>
+		
+	  </ul>
+	  
+	</div> <!--pbox-->
+  </div> <!--photo-->
+   
+  </div>
+  </div>
+ </body>
+</html>
